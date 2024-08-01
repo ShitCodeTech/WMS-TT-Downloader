@@ -1,5 +1,4 @@
 import requests
-import time
 
 async def addToCDN(link):
     headers = {
@@ -37,7 +36,7 @@ async def addToCDN(link):
         data=data
         )
     
-async def downloadVideo(link):
+def downloadVideo(link):
     link = link.split('/')[5::]
     uid = str(link[0])
     headers = {
